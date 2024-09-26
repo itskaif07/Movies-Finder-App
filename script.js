@@ -56,7 +56,7 @@ async function movie() {
 
       const poster = element.Poster === 'N/A' ? 'https://akeia.in/wp-content/uploads/2021/09/noimg.jpg' : element.Poster
 
-      box.innerHTML += `<div class="w-[26%] h-full rounded-xl bg-[url('${poster}')] bg-cover bg-center shadow-lg hover:shadow-[#222222] mb-4 relative cursor-pointer" onclick = "viewDetails('${element.imdbID}')">
+      box.innerHTML += `<div class="w-[90%] sm:w-[40%] lg:w-[26%] 2xl:w-[22%] h-full rounded-xl bg-[url('${poster}')] bg-cover bg-center shadow-lg hover:shadow-[#222222] mb-4 relative cursor-pointer" onclick = "viewDetails('${element.imdbID}')">
     <div class="h-[15%] bg-[#222222] text-white p-4 overflow-hidden absolute bottom-0 w-full rounded-br-md rounded-bl-md">
         <h1 class="text-lg font-bold text-center">${element.Title}</h1>
         <div class = "flex justify-evenly items-center mt-2">
